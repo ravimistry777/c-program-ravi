@@ -7,8 +7,6 @@ int main(){
 
     cout<<"Hello world"<<"\t"<<"152"<<a<<endl;
     cout<<"end";
-
-    
     
 
     return 0;
