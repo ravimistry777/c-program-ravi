@@ -1,44 +1,52 @@
 #include<iostream>
-
 using namespace std;
 
-class REPORT
-{
-    private:
+class Report {
+private:
     int adno;
     char name[20];
-    int marks[3]={89,56,88};
-    int average(int marks);
-    int sum;
-    
+    float marks[5];
+    float avreage;
+    float getavg();
 
     public:
-    void readinfo(){
-        cout<<"enter the adno:- "<<adno<<endl;
-        cin>>adno;
-        cout<<"enter the name of student:- "<<name<<endl;
-        cin>>name;
-        
+    int redinginfo (){
+        cout << "Enter  adno:";
+        cin >> adno;
+        cout << "Enter name:";
+        cin >> name;
+        for (int i = 0; i <5; i++)
+        {
+            cout << "Enter marks of sub:" << i << ":";
+            cin >> marks[i];
         }
-    void displayinfo(){
-        cout<<"Adno is:- "<<adno<<endl;
-        cout<<"name is:- "<<name<<endl;
-        cout<<"total marks is:- "<<marks[3]<<endl;
-        cout<<"total average is:- "<<sum<<endl;
+        
+    }
 
+    float displayinfo(){
+        cout << "adno:" << adno<<endl;
+        cout << "Name:" << name<<endl;
+        for (int i = 0; i < 5; i++)
+        {
+            cout << "marks of sub" << i << ":" << marks[i]<<endl;
+        }
+        cout << "Average is:" << getavg();
     }
 };
-int sum;
-int marks=sum+=0;
-int REPORT::average(int marks){
-    sum=marks/3;
-    return sum;
 
+float Report::getavg(){
+    float total =0;
+    for (int i = 0; i < 5; i++)
+    {
+        total += marks[i];
+    }
+    avreage = total / 5;
+    return avreage;
 }
 
-int main(){
-    REPORT s1;
-    s1.readinfo();
-    s1.displayinfo();
 
+int main (){
+    Report r1;
+    r1.redinginfo();
+    r1.displayinfo();
 }
