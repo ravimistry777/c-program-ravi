@@ -8,7 +8,7 @@ class test
     float eng,math,science;
     float total=0.0;
     float ctotal;
-
+ 
     public:
     test(){
         cout<<"enter the adnum:- ";
