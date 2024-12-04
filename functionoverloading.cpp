@@ -5,7 +5,7 @@ using namespace std;
 class hello{
     public:
     void test(int r){
-        cout<<"area of circul is:- "<<3.14*r*r<<endl;;
+        cout<<"area of circle is:- "<<3.14*r*r<<endl;;
     }
     void test(int h,int b){
         cout<<"area of triangle:- "<<h*b/2<<endl;
