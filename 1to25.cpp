@@ -10,8 +10,7 @@ int main(){
             cout<<num++<<endl;
         }cout<<"\n";
         
-    }
-
+    }  
 
     return 0;
 }
