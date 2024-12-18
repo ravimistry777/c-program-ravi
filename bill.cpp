@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int rate,qty,amt=0,netbill=0,billamt=0;
+    float rate,qty,amt=0,netbill=0,billamt=0;
     float discount=0.0,gst=0.0;
 
     cout<<"Enter the product price:- ";
@@ -22,6 +22,6 @@ int main(){
     cout<<"Total GST applied:- "<<gst<<endl;
     cout<<"NET BILL IS:- "<<netbill<<endl;
     
-
+                        
     return 0;
 }
